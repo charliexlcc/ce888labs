@@ -5,8 +5,9 @@ import seaborn as sns
 import numpy as np
 
 
-def boostrap(sample, sample_size, iterations):
+def boostrap(sample, sample_size, iterations,CI):
 	# <---INSERT YOUR CODE HERE--->
+	
 	return data_mean, lower, upper
 
 
