@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from bootstrap import boostrap
 
 
 
@@ -37,6 +38,32 @@ if __name__ == "__main__":
     axes.set_xlabel('new fleet')
     axes.set_ylabel('new fleet count')
     sns_plot_new.savefig("histogram_new.png", bbox_inches='tight')
+
+    #Exercise: The bootstrap(2)
+    mean_cur=np.mean(cur_flt)
+    mean_new=np.mean(new_flt)
+
+    boots_cur=boostrap(cur_flt,cur_flt.shape[0],1000,0.95)
+    boots_new = boostrap(new_flt, new_flt.shape[0], 1000, 0.95)
+
+    upper_cur=boots_cur[2]
+    lower_cur=boots_cur[1]
+
+    upper_new=boots_new[2]
+    lower_new=boots_new[1]
+
+    print("current fleet:")
+    print("mean: ",mean_cur)
+    print("upper: ",upper_cur)
+    print("lower: ",lower_cur)
+
+    print("-------------------------")
+    print("new fleet: ")
+    print("mean: ",mean_new)
+    print("upper: ",upper_new)
+    print("lower: ",lower_new)
+
+
 
 
 

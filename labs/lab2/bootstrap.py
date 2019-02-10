@@ -3,12 +3,28 @@ matplotlib.use('Agg')
 import pandas as pd
 import seaborn as sns
 import numpy as np
+from random import sample
+from sklearn.utils import resample
 
 
-def boostrap(sample, sample_size, iterations,CI):
+def boostrap(dataset, sample_size, iterations,CI):
 	# <---INSERT YOUR CODE HERE--->
-	
-	return data_mean, lower, upper
+    stats=list()
+    n_size=int(len(dataset)*sample_size)
+    for i in range(iterations):
+		# Sample (with replacement) from the given dataset
+        sample=resample(dataset,n_samples=n_size)
+        # Calculate user-defined statistic and store it
+        mean=np.mean(sample)
+        stats.append(mean)
+
+
+	# Sort the array of per-sample statistics and cut off ends
+    stats=sorted(stats)
+    data_mean=np.mean(stats)
+    lower=np.percentile(stats,((1-CI)/2)*100)
+    upper=np.percentile(stats,(CI+((1-CI)/2))*100)
+    return data_mean, lower, upper
 
 
 if __name__ == "__main__":
@@ -17,7 +33,7 @@ if __name__ == "__main__":
 	data = df.values.T[1]
 	boots = []
 	for i in range(100, 100000, 1000):
-		boot = boostrap(data, data.shape[0], i)
+		boot = boostrap(data, data.shape[0], i,0.95)
 		boots.append([i, boot[0], "mean"])
 		boots.append([i, boot[1], "lower"])
 		boots.append([i, boot[2], "upper"])
@@ -29,12 +45,11 @@ if __name__ == "__main__":
 	sns_plot.axes[0, 0].set_xlim(0, 100000)
 
 	sns_plot.savefig("bootstrap_confidence.png", bbox_inches='tight')
-	sns_plot.savefig("bootstrap_confidence.pdf", bbox_inches='tight')
+	#sns_plot.savefig("bootstrap_confidence.pdf", bbox_inches='tight')
 
 
 	#print ("Mean: %f")%(np.mean(data))
 	#print ("Var: %f")%(np.var(data))
-	
 
 
-	
+
