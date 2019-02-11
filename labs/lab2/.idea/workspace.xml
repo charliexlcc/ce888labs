@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c028a2fb-37b4-4c0d-a756-d3b5e814bfaf" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/analysisInOverleaf.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicles.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicles.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,17 +17,39 @@
     <SUITE FILE_PATH="coverage/lab2$vehicles.coverage" NAME="vehicles Coverage Results" MODIFIED="1549781558239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$salaries.coverage" NAME="salaries Coverage Results" MODIFIED="1548078004578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab2$bootstrap.coverage" NAME="bootstrap Coverage Results" MODIFIED="1549767579922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab2$power.coverage" NAME="power Coverage Results" MODIFIED="1549791998749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="lab2" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="vehicles.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vehicles.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vehicles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="power.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/power.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vehicles.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vehicles.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -67,6 +90,7 @@
         <option value="$PROJECT_DIR$/salaries.py" />
         <option value="$PROJECT_DIR$/bootstrap.py" />
         <option value="$PROJECT_DIR$/vehicles.py" />
+        <option value="$PROJECT_DIR$/power.py" />
       </list>
     </option>
   </component>
@@ -106,7 +130,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab3" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -121,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.vehicles">
+  <component name="RunManager" selected="Python.power">
     <configuration name="bootstrap" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lab2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,6 +160,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bootstrap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="power" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="lab2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/power.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,9 +226,11 @@
       <item itemvalue="Python.salaries" />
       <item itemvalue="Python.vehicles" />
       <item itemvalue="Python.bootstrap" />
+      <item itemvalue="Python.power" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.power" />
         <item itemvalue="Python.vehicles" />
         <item itemvalue="Python.bootstrap" />
         <item itemvalue="Python.salaries" />
@@ -504,10 +549,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/histogram_new.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vehicles.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vehicles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/power.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
